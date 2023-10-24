@@ -1,0 +1,50 @@
+html {
+  background: url('./background.jpg') bottom center;
+  background-size: cover;
+}
+body {
+    /*To make a div centre horizontally and vertically I need to make height 100% and margin 0 to make full use of viewport */
+    padding: 0;
+    height: 100%;
+    align-items: center;
+}
+html{
+    height: 100%;
+    margin: 0%;
+    padding: 0;
+}
+
+.keys{
+    display: flex;
+    flex: 1;
+    align-items: center;/* Vertically contents of keys assigned class*/
+    min-height: 100vh;
+    justify-content: center;/* horizontally*/
+    /*background: #fff;*/
+}
+.key{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    margin: 10px;
+    transition: all .07s ease;
+    background: rgba(0,0,0,0.4);
+      text-align: center;
+    }
+
+kbd{
+    display: block;
+    font-size: 3rem;
+    justify-content: center;
+    color: red;
+}
+.sound{
+    text-transform: uppercase;
+    color: white;
+    
+}
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
